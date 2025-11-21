@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Azerbaijan - Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body id="mapPage">
+  <nav class="navbar">
+    <div class="logo">Explore Azerbaijan</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="map.html">Explore Map</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="trips.html">Trip Ideas</a>
+      <a href="about.html">About Azerbaijan</a>
+    </div>
+    <div class="language-switcher">
+      <a href="#">EN</a>
+      <a href="#">AZ</a>
+      <a href="#">RU</a>
+    </div>
+  </nav>
+
+  <section class="filters">
+    <label for="map-region-filter">Region:</label>
+    <select id="map-region-filter">
+      <option value="all">All Regions</option>
+    </select>
+    <label for="map-category-filter">Category:</label>
+    <select id="map-category-filter">
+      <option value="all">All Categories</option>
+    </select>
+  </section>
+
+  <div id="map"></div>
+
+  <footer class="footer">
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="map.html">Explore Map</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="trips.html">Trip Ideas</a>
+      <a href="about.html">About Azerbaijan</a>
+    </div>
+    <div class="social">
+      <a href="#" aria-label="Facebook">F</a>
+      <a href="#" aria-label="Instagram">I</a>
+      <a href="#" aria-label="Twitter">T</a>
+    </div>
+    <div class="credit">
+      &copy; Explore Azerbaijan
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/places.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
